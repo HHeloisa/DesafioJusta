@@ -1,3 +1,5 @@
+import 'package:desafio_justa/about.dart';
+import 'package:desafio_justa/botao_executar.dart';
 import 'package:desafio_justa/constants/constantes.dart';
 import 'package:desafio_justa/desafio1.dart';
 import 'package:desafio_justa/desafio2.dart';
@@ -15,6 +17,10 @@ class DesafioJusta extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: desafioJusta,
+      initialRoute: '/',
+      routes: {
+        '/about': (context) => About(),
+      },
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -44,10 +50,16 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(16.0),
         child: Center(
             child: ListView(
-          children: const [
-            Desafio1(),
-            Desafio2(),
-            Desafio3()
+          children: [
+            const Desafio1(),
+            const Desafio2(),
+            const Desafio3(),
+            Center(
+              child: BotaoExecutar(
+                texto: "Sobre",
+                funcao: () => {Navigator.pushNamed(context, '/about')},
+              ),
+            ),
           ],
         )
         ),

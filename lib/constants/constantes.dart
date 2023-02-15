@@ -17,3 +17,8 @@ const d2descricao2 =
 const d3descricao1 =
     "Faça com que a função longestWord(sen) pegue o paramêtro sen passado e retorne a palavra mais londa da string. Se houver duas ou mais palavras com o mesmo comprimento, retorne a priemira palavra da string com esse comprimento. Ignore a pontuação e assuma que ela não estará vazia. As palavras também podem conter números, por exemplo, conforme exemplo de input e output abaixo: Input: 'fun&!! time', Output: time; Input: 'I love dogs', Output: 'love'.";
 const d3descricao2 = "Digite uma frase e descubra a palavra mais longa.";
+const about = "Sobre mim e este projeto";
+const aboutDescription =
+    "Meu nome é Heloísa Junges Hackenhaar, tenho 28 anos. Sou graduada em Bacharelado e Licenciatura em Ciências Sociais, e em Desenvolvimento WEB pela Trybe. Este projeto foi desenvolvido como desafio técnico para a empresa Justa. Vaga para qual, caso aprovada, realizarei um dos meus sonhos de ir morar no Nordeste. Recife, ainda por cima, RECIFE! <3";
+const nome = "Heloísa Junges Hackenhaar";
+const contato = "hhackenhaar@gmail.com";
