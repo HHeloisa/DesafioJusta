@@ -13,6 +13,7 @@ class DesafioJusta extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: desafioJusta,
       theme: ThemeData(
         primarySwatch: Colors.blue,
