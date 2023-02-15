@@ -1,5 +1,6 @@
 import 'package:desafio_justa/constants/constants.dart';
 import 'package:desafio_justa/desafio1.dart';
+import 'package:desafio_justa/desafio2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -43,13 +44,16 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: const Center(
-        child: Desafio1()
+      body: Center(
+          child: ListView(
+        children: const [Desafio1(), Desafio2()],
+      )
       ),
     );
   }
