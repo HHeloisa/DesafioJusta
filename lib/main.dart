@@ -3,7 +3,6 @@ import 'package:desafio_justa/desafio1.dart';
 import 'package:desafio_justa/desafio2.dart';
 import 'package:desafio_justa/desafio3.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 void main() {
   runApp(const DesafioJusta());

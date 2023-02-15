@@ -1,9 +1,6 @@
 import 'package:desafio_justa/constants/constants.dart';
 import 'package:desafio_justa/constants/descricaoDesafio.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class Desafio3 extends StatefulWidget {
   const Desafio3({super.key});

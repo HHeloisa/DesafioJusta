@@ -10,7 +10,7 @@ class DesafioDescricao extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      Padding(
+      const Padding(
           padding: EdgeInsets.symmetric(vertical: 24.0),
           child: Divider(
             thickness: 20,
