@@ -16,7 +16,20 @@ class _Desafio3State extends State<Desafio3> {
   TextEditingController string1 = TextEditingController();
   String desafio3Resultado = '';
 
-  longestWord(sen) {}
+  longestWord(sen) {
+    int longest = 0;
+    String biggestWord = '';
+    sen = sen.split(" ");
+    sen.forEach((s) => {
+          print(s),
+          s.length > longest
+              ? {print(s.length), longest = s.length, biggestWord = s}
+              : null
+        });
+    setState(() {
+      desafio3Resultado = biggestWord;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
