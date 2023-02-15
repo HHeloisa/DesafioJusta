@@ -1,7 +1,7 @@
-import 'package:desafio_justa/constants/button.dart';
-import 'package:desafio_justa/constants/constants.dart';
-import 'package:desafio_justa/constants/descricaoDesafio.dart';
-import 'package:desafio_justa/labels/labelH3.dart';
+import 'package:desafio_justa/botao_executar.dart';
+import 'package:desafio_justa/constants/constantes.dart';
+import 'package:desafio_justa/constants/descricao_desafio.dart';
+import 'package:desafio_justa/labels/label_h3.dart';
 import 'package:flutter/material.dart';
 
 class Desafio1 extends StatefulWidget {
@@ -58,9 +58,6 @@ class _Desafio1State extends State<Desafio1> {
         funcao: () => encontrarIntersecoes(string1.text, string2.text),
         texto: executarDesafio1,
       ),
-      // TextButton(
-      //     onPressed: (() => encontrarIntersecoes(string1.text, string2.text)),
-      //     child: const Text(executarDesafio1)),
       desafio1Resultado == '' ? Container() : Text(desafio1Resultado)
     ]);
   }

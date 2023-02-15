@@ -1,5 +1,5 @@
-import 'package:desafio_justa/labels/labelH1.dart';
-import 'package:desafio_justa/labels/labelH2.dart';
+import 'package:desafio_justa/labels/label_h1.dart';
+import 'package:desafio_justa/labels/label_h2.dart';
 import 'package:flutter/material.dart';
 
 class DesafioDescricao extends StatelessWidget {

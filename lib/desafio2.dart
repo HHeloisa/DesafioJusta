@@ -1,9 +1,9 @@
-import 'package:desafio_justa/constants/constants.dart';
-import 'package:desafio_justa/constants/descricaoDesafio.dart';
-import 'package:desafio_justa/labels/labelH3.dart';
+import 'package:desafio_justa/constants/constantes.dart';
+import 'package:desafio_justa/constants/descricao_desafio.dart';
+import 'package:desafio_justa/labels/label_h3.dart';
 import 'package:flutter/material.dart';
 
-import 'constants/button.dart';
+import 'botao_executar.dart';
 
 class Desafio2 extends StatefulWidget {
   const Desafio2({super.key});

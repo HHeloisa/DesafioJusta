@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class LabelH2 extends StatelessWidget {
   const LabelH2({super.key, required this.descricao});

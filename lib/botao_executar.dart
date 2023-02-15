@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class BotaoExecutar extends StatefulWidget {
   const BotaoExecutar({super.key, this.funcao, required this.texto});
