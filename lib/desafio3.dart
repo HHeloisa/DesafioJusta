@@ -17,13 +17,13 @@ class _Desafio3State extends State<Desafio3> {
   String desafio3Resultado = '';
 
   longestWord(sen) {
+    sen = sen.replaceAll(RegExp('[^ A-Za-z]'), '');
     int longest = 0;
     String biggestWord = '';
     sen = sen.split(" ");
     sen.forEach((s) => {
-          print(s),
           s.length > longest
-              ? {print(s.length), longest = s.length, biggestWord = s}
+              ? {longest = s.length, biggestWord = s}
               : null
         });
     setState(() {
