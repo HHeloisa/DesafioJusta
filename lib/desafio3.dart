@@ -20,6 +20,7 @@ class _Desafio3State extends State<Desafio3> {
     sen = sen.split(" ");
     sen.forEach((s) => {
           s.length > longest
+              // se é do mesmo tamanho, não é menor, e não substitui a palavra anterior, mantendo a primeira
               ? {longest = s.length, biggestWord = s}
               : null
         });

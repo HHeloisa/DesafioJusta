@@ -12,3 +12,4 @@ const descricaoDesafio2 =
     "Dada a função chamada findAge, que recebe uma string contendo chaves e valores, onde key possui o nome de uma pessoa e value possui a idade dela, retorne a quantidade e os nomes das pessoas com idade abaixo de 29, anos, conforme exemplo de input e output abaixo: Input: 'key: Matheys, value: 25; key: Heniruqe, value: 29; key: Júlio, value: 21' Output: '2 Pessoa(s):Matheus, Glória'";
 const descricaoDesafio3 =
     "Faça com que a função longestWord(sen) pegue o paramêtro sen passado e retorne a palavra mais londa da string. Se houver duas ou mais palavras com o mesmo comprimento, retorne a priemira palavra da string com esse comprimento. Ignore a pontuação e assuma que ela não estará vazia. As palavras também podem conter números, por exemplo, conforme exemplo de input e output abaixo:";
+const appName = "Desafio Técnico - Justa";
