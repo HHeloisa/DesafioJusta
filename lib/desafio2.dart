@@ -1,5 +1,6 @@
 import 'package:desafio_justa/constants/constants.dart';
 import 'package:desafio_justa/constants/descricaoDesafio.dart';
+import 'package:desafio_justa/labels/labelH3.dart';
 import 'package:flutter/material.dart';
 
 class Desafio2 extends StatefulWidget {
@@ -43,8 +44,8 @@ class _Desafio2State extends State<Desafio2> {
       children: [
         const DesafioDescricao(titulo: desafio2, descricao: d2descricao1),
         const Padding(
-          padding: EdgeInsets.only(top: 8.0),
-          child: Text(d2descricao2),
+          padding: EdgeInsets.only(top: 18.0),
+          child: LabelH3(instrucao: d2descricao2),
         ),
         TextField(
           controller: string1,

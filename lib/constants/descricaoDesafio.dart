@@ -1,3 +1,5 @@
+import 'package:desafio_justa/labels/labelH1.dart';
+import 'package:desafio_justa/labels/labelH2.dart';
 import 'package:flutter/material.dart';
 
 class DesafioDescricao extends StatelessWidget {
@@ -10,24 +12,13 @@ class DesafioDescricao extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      const Padding(
-          padding: EdgeInsets.symmetric(vertical: 24.0),
-          child: Divider(
-            thickness: 20,
-            height: 0,
-            color: Colors.blueGrey,
-          )),
       Center(
         child: Padding(
           padding: const EdgeInsets.only(bottom: 18.0),
-          child: Text(titulo,
-              style: const TextStyle(
-                  fontSize: 15,
-                  color: Colors.blue,
-                  fontWeight: FontWeight.w500)),
+            child: LabelH1(titulo: titulo)
         ),
       ),
-      Text(descricao),
+      LabelH2(descricao: descricao),
     ]);
   }
 }
