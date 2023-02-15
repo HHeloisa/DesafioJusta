@@ -10,9 +10,8 @@ class Desafio2 extends StatefulWidget {
 }
 
 class _Desafio2State extends State<Desafio2> {
-  final string =
-      'key: Matheys, value: 25; key: Heniruqe, value: 29; key: Júlio, value: 21';
   String desafio2Resultado = '';
+  TextEditingController string1 = TextEditingController();
 
   findAge(string) {
     string = string.split(";").map((n) => n.trim()).toList();
@@ -42,23 +41,19 @@ class _Desafio2State extends State<Desafio2> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const DesafioDescricao(titulo: desafio2, descricao: descricaoDesafio2),
+        const DesafioDescricao(titulo: desafio2, descricao: d2descricao1),
+        const Padding(
+          padding: EdgeInsets.only(top: 8.0),
+          child: Text(d2descricao2),
+        ),
+        TextField(
+          controller: string1,
+        ),
         TextButton(
-            onPressed: (() => findAge(string)),
+            onPressed: (() => findAge(string1.text)),
             child: const Text(executarDesafio2)),
         desafio2Resultado == '' ? Container() : Text(desafio2Resultado)
       ],
     );
   }
 }
-
-formatarResultado(a) {}
-
-
-
-//"Dada a função chamada findAge, 
-//que recebe uma string contendo chaves e valores,
-// onde key possui o nome de uma pessoa e value possui a idade dela, 
-//retorne a quantidade e os nomes das pessoas com idade abaixo de 29, anos, conforme exemplo de input e output abaixo: 
-//Input: 'key: Matheys, value: 25; key: Heniruqe, value: 29; key: Júlio, value: 21' 
-//Output: '2 Pessoa(s):Matheus, Glória'";

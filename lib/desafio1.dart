@@ -37,16 +37,16 @@ class _Desafio1State extends State<Desafio1> {
   @override
   Widget build(BuildContext context) {
     return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-      const DesafioDescricao(titulo: desafio1, descricao: descricaoDesafio1),
+      const DesafioDescricao(titulo: desafio1, descricao: d1descricao1),
       const Padding(
-        padding: EdgeInsets.symmetric(vertical: 8.0),
+        padding: EdgeInsets.only(bottom: 6.0, top: 8.0),
         child: Text(d1descricao2),
       ),
       TextField(
         controller: string1,
       ),
       const Padding(
-        padding: EdgeInsets.symmetric(vertical: 8.0),
+        padding: EdgeInsets.symmetric(vertical: 6.0),
         child: Text(d1descricao3),
       ),
       TextField(

@@ -33,10 +33,10 @@ class _Desafio3State extends State<Desafio3> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const DesafioDescricao(titulo: desafio3, descricao: descricaoDesafio3),
+        const DesafioDescricao(titulo: desafio3, descricao: d3descricao1),
         const Padding(
-          padding: EdgeInsets.symmetric(vertical: 8.0),
-          child: Text(d1descricao2),
+          padding: EdgeInsets.only(top: 8.0),
+          child: Text(d3descricao2),
         ),
         TextField(
           controller: string1,
