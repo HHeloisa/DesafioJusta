@@ -19,7 +19,7 @@ class DesafioJusta extends StatelessWidget {
       title: desafioJusta,
       initialRoute: '/',
       routes: {
-        '/about': (context) => About(),
+        '/about': (context) => const About(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
