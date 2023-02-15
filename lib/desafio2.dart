@@ -3,6 +3,8 @@ import 'package:desafio_justa/constants/descricaoDesafio.dart';
 import 'package:desafio_justa/labels/labelH3.dart';
 import 'package:flutter/material.dart';
 
+import 'constants/button.dart';
+
 class Desafio2 extends StatefulWidget {
   const Desafio2({super.key});
 
@@ -50,9 +52,10 @@ class _Desafio2State extends State<Desafio2> {
         TextField(
           controller: string1,
         ),
-        TextButton(
-            onPressed: (() => findAge(string1.text)),
-            child: const Text(executarDesafio2)),
+        BotaoExecutar(
+          funcao: () => findAge(string1.text),
+          texto: executarDesafio2,
+        ),
         desafio2Resultado == '' ? Container() : Text(desafio2Resultado)
       ],
     );

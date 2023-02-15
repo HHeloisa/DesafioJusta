@@ -1,3 +1,4 @@
+import 'package:desafio_justa/constants/button.dart';
 import 'package:desafio_justa/constants/constants.dart';
 import 'package:desafio_justa/constants/descricaoDesafio.dart';
 import 'package:desafio_justa/labels/labelH3.dart';
@@ -53,9 +54,13 @@ class _Desafio1State extends State<Desafio1> {
       TextField(
         controller: string2,
       ),
-      TextButton(
-          onPressed: (() => encontrarIntersecoes(string1.text, string2.text)),
-          child: const Text(executarDesafio1)),
+      BotaoExecutar(
+        funcao: () => encontrarIntersecoes(string1.text, string2.text),
+        texto: executarDesafio1,
+      ),
+      // TextButton(
+      //     onPressed: (() => encontrarIntersecoes(string1.text, string2.text)),
+      //     child: const Text(executarDesafio1)),
       desafio1Resultado == '' ? Container() : Text(desafio1Resultado)
     ]);
   }

@@ -1,3 +1,4 @@
+import 'package:desafio_justa/constants/button.dart';
 import 'package:desafio_justa/constants/constants.dart';
 import 'package:desafio_justa/constants/descricaoDesafio.dart';
 import 'package:flutter/material.dart';
@@ -41,9 +42,10 @@ class _Desafio3State extends State<Desafio3> {
         TextField(
           controller: string1,
         ),
-        TextButton(
-            onPressed: (() => longestWord(string1.text)),
-            child: const Text(executarDesafio3)),
+        BotaoExecutar(
+          funcao: () => longestWord(string1.text),
+          texto: executarDesafio2,
+        ),
         desafio3Resultado == '' ? Container() : Text(desafio3Resultado)
       ],
     );
