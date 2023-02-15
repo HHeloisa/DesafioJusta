@@ -1,6 +1,7 @@
 import 'package:desafio_justa/constants/constants.dart';
 import 'package:desafio_justa/desafio1.dart';
 import 'package:desafio_justa/desafio2.dart';
+import 'package:desafio_justa/desafio3.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -50,10 +51,25 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
-          child: ListView(
-        children: const [Desafio1(), Desafio2()],
-      )
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Center(
+            child: ListView(
+          children: const [
+            Desafio1(),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 24.0),
+              child: Divider(
+                thickness: 20,
+                height: 0,
+                color: Colors.blueGrey,
+              ),
+            ),
+            Desafio2(),
+            Desafio3()
+          ],
+        )
+        ),
       ),
     );
   }
