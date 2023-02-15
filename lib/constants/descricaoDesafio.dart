@@ -1,4 +1,3 @@
-import 'package:desafio_justa/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class DesafioDescricao extends StatelessWidget {
@@ -13,7 +12,7 @@ class DesafioDescricao extends StatelessWidget {
     return Column(children: [
       Center(
         child: Padding(
-          padding: EdgeInsets.only(bottom: 18.0),
+          padding: const EdgeInsets.only(bottom: 18.0),
           child: Text(titulo,
               style: const TextStyle(
                   fontSize: 15,

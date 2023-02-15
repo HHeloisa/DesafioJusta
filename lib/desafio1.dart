@@ -16,7 +16,7 @@ class _Desafio1State extends State<Desafio1> {
 
   formatarLista(lista) => lista.split(",").map((n) => n.trim()).toList();
 
-  executarDesafio1(lista1, lista2) {
+  encontrarIntersecoes(lista1, lista2) {
     // transformar a string em uma lista de valores separados por vírgula
     // preparar a entrada removendo espaços
     // transformei numa função pra não repetir
@@ -37,7 +37,7 @@ class _Desafio1State extends State<Desafio1> {
   @override
   Widget build(BuildContext context) {
     return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-      DesafioDescricao(titulo: desafio1, descricao: descricaoDesafio1),
+      const DesafioDescricao(titulo: desafio1, descricao: descricaoDesafio1),
       const Padding(
         padding: EdgeInsets.symmetric(vertical: 8.0),
         child: Text(d1descricao2),
@@ -53,8 +53,8 @@ class _Desafio1State extends State<Desafio1> {
         controller: string2,
       ),
       TextButton(
-          onPressed: (() => executarDesafio1(string1.text, string2.text)),
-          child: const Text("Executar desafio 1")),
+          onPressed: (() => encontrarIntersecoes(string1.text, string2.text)),
+          child: const Text(executarDesafio1)),
       desafio1Resultado == '' ? Container() : Text(desafio1Resultado)
     ]);
   }
