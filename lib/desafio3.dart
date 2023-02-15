@@ -44,7 +44,7 @@ class _Desafio3State extends State<Desafio3> {
         ),
         BotaoExecutar(
           funcao: () => longestWord(string1.text),
-          texto: executarDesafio2,
+          texto: executarDesafio3,
         ),
         desafio3Resultado == '' ? Container() : Text(desafio3Resultado)
       ],
