@@ -10,6 +10,13 @@ class DesafioDescricao extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
+      Padding(
+          padding: EdgeInsets.symmetric(vertical: 24.0),
+          child: Divider(
+            thickness: 20,
+            height: 0,
+            color: Colors.blueGrey,
+          )),
       Center(
         child: Padding(
           padding: const EdgeInsets.only(bottom: 18.0),

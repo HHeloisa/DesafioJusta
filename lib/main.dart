@@ -57,14 +57,6 @@ class _MyHomePageState extends State<MyHomePage> {
             child: ListView(
           children: const [
             Desafio1(),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 24.0),
-              child: Divider(
-                thickness: 20,
-                height: 0,
-                color: Colors.blueGrey,
-              ),
-            ),
             Desafio2(),
             Desafio3()
           ],
