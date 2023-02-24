@@ -1,6 +1,6 @@
-import 'package:desafio_justa/botao_executar.dart';
+import 'package:desafio_justa/componentes/botao_executar.dart';
 import 'package:desafio_justa/constants/constantes.dart';
-import 'package:desafio_justa/constants/descricao_desafio.dart';
+import 'package:desafio_justa/componentes/descricao_desafio.dart';
 import 'package:flutter/material.dart';
 
 class Desafio3 extends StatefulWidget {
