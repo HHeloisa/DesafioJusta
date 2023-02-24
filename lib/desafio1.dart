@@ -38,7 +38,7 @@ class _Desafio1State extends State<Desafio1> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+    return Column(children: [
       const DesafioDescricao(titulo: desafio1, descricao: d1descricao1),
       const Padding(
         padding: EdgeInsets.only(top: 18.0),

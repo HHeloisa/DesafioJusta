@@ -22,3 +22,4 @@ const aboutDescription =
     "Meu nome é Heloísa Junges Hackenhaar, tenho 28 anos. Sou graduada em Bacharelado e Licenciatura em Ciências Sociais, e em Desenvolvimento WEB pela Trybe. Este projeto foi desenvolvido como desafio técnico para a empresa Justa. Vaga para qual, caso aprovada, realizarei um dos meus sonhos de ir morar no Nordeste. Recife, ainda por cima, RECIFE! <3";
 const nome = "Heloísa Junges Hackenhaar";
 const contato = "hhackenhaar@gmail.com";
+const avout = "Sobre";

@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Desafio3(),
             Center(
               child: BotaoExecutar(
-                texto: "Sobre",
+                texto: about,
                 funcao: () => {Navigator.pushNamed(context, '/about')},
               ),
             ),
